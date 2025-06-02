@@ -98,10 +98,27 @@ h5 {
   background-color: white;
   margin-left: 70px;
   padding-left: 50px;
-  padding-top: 12px;
+  padding-top: 10px;
   padding-bottom: 10px;
   margin-top: 60px;
   width: 100%;
   position: fixed;
   z-index: 500;
+  word-spacing: 5px;
+}
+
+.date {
+  font-family: arial;
+  font-weight: bold;
+}
+
+input[type="date"] {
+  background: none;
+  border: none;
+  outline: none;
+  box-shadow: none;
+  padding: 0;
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
 }

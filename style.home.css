@@ -105,3 +105,52 @@ h5 {
   position: fixed;
   z-index: 500;
 }
+
+.container {
+  display: flex;
+  grid-template-columns: 300px 300px 300px;
+  gap: 40px;
+  padding: 20px;
+  padding-top: 140px;
+  margin-left: 100px;
+  flex-wrap: wrap;
+}
+
+.box {
+  padding: 50px;
+  width: 200px;
+  font-family: arial;
+  font-weight: bold;
+  text-align: center;
+  letter-spacing: 2px;
+  border-radius: 5px;
+}
+
+.box a {
+  color: white;
+  text-decoration: none;
+}
+
+#sub1 {
+  background: #419437;
+}
+
+#sub2 {
+  background: #4c9fcb;
+}
+
+#sub3 {
+  background: #932b76;
+}
+
+#sub4 {
+  background: #bd622b;
+}
+
+#sub5 {
+  background: #000000;
+}
+
+#sub6 {
+  background: #2b3890;
+} 
