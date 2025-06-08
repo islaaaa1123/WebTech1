@@ -1,0 +1,241 @@
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif, 'Times New Roman';
+  background: #f4f4f4;
+
+}
+.header {
+  display: flex;
+  justify-content: flex;
+  align-items: center;
+  background: #b82a2a;
+  padding-left: 20px;
+  gap: 10px;
+  top: 0;
+  left: 0;
+  height: 50px;
+  width: 100%;
+  position: fixed;
+  z-index: 1000;
+}
+h1 {
+  font-size: 20px;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: lighter;
+  color: white;
+}
+.menu{
+     width: 20px;
+    height: auto;
+}
+.logo {
+  width: 45px;
+  height: auto;
+}
+
+.sidebar {
+      margin-top: 5%;
+      height: 100vh;
+      width: 150px;
+      position: fixed;
+      left: 0%;
+      background-color: #3a3a3a;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 20px 0;
+    }
+     .top-links{
+      margin-top: 25px;
+      display: flex;
+      flex-direction: column;
+      padding: 0px ;
+    }
+
+    .bottom-links{
+      margin-bottom: 87px;
+    }
+    .sidebar a {
+      display: flex;
+      align-items: center;
+      padding: 12px 20px;
+      text-decoration: none;
+      font-size: 15px;
+      color: white;
+      left: -100%
+    }
+    .sidebar {
+    transform: translateX(-100%);
+    transition: transform  ease-in-out;
+    position: fixed;
+    left: 0;
+    height: 100%;
+    background-color: #3a3a3a;
+    z-index: 999;
+  }
+  .sidebar.active {
+    transform: translateX(0);
+  }
+
+    .sidebar a:hover {
+      background-color: #BF1E2E;
+    }
+
+    .sidebar img.icon {
+      width: 20px;
+      height: 20px;
+      margin-right: 10px;
+    }
+    .box{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 20px;
+        height: auto;
+        width: 77.05px;
+        border-radius: 5px;
+        background-color: white;
+        justify-content: space-evenly;
+    }
+    .container .absent {
+        background-color: #F44336;
+        color:#F44336;
+    }
+    .container {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        margin-top: 0px;
+        align-items: center;
+    }
+    .info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        
+    }
+    .box-img {
+        align-items: center;
+        margin-top: 10px;
+        width: 37.86px;
+        height: auto;
+        margin-bottom: -15px;
+
+}
+.count {
+  font-size: 20px;
+  font-weight: bold;
+}
+#present .count {
+  color: #4CAF50;
+}
+#absent .count {
+  color: #F44336;
+}
+#late .count {
+  color: #FFC107;
+}
+.sec{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-top: 20px;
+}
+#sem{
+  height: 34px;
+  width: 332px;
+}
+
+.search-bar {
+  margin-top: 60px;
+  width: 88.7%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+.search-wrapper {
+  position: relative;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+.table-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+th, td {
+  padding: 20px 10px;
+  text-align: center;
+  border-bottom: 1px solid #eee;
+}
+th {
+  background-color: #f0f0f0;
+  padding: 10px;
+}
+.tbodyy{
+        font-size: 14px;
+      }
+
+.status {
+  padding: 4px 10px;
+  border-radius: 5px;
+  font-size: 15px;
+  color: white;
+  font-weight: Regular;
+}
+
+.status.present {
+  background-color: #4CAF50;
+}
+
+.status.absent {
+  background-color: #F44336;
+}
+
+.status.late {
+  background-color: #FFC107;
+  color: #ffffff;
+}
+@media (max-width: 600px) {
+      h1 {
+        font-size: 18px;
+      }
+      .sidebar {
+    transform: translateX(-100%);
+    transition: transform  ease-in-out;
+    position: fixed;
+    left: 0;
+    height: 100%;
+    background-color: #3a3a3a;
+    z-index: 999;
+  }
+   .top-links{
+      margin-top: 40px;
+      display: flex;
+      flex-direction: column;
+      padding: 0px ;
+    }
+
+    .bottom-links{
+      margin-bottom: 60px;
+    }
+.sidebar.active {
+    transform: translateX(0);
+  }
+}

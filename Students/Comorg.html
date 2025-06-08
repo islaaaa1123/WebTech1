@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="MCC.css">
+</head>
+<body>
+     <div class="header">
+            <img src="Assets/Menu Bar.png" alt="Logo" class="menu" id="menu-toggle">
+             <img src="Assets/mcclogo.png" alt="Logo" class="logo">
+            <h1>MABALACAT CITY COLLEGE</h1>
+        </div>
+
+        <div class="sidebar" id="sidebar">
+    <div class="top-links">
+      <a href="SHomepage.html"><img class="icon" src="Assets/home.png" alt="Home" /> Home</a>
+      <a href="#"><img class="icon" src="Assets/Calendar.png" alt="Calendar" /> Calendar</a>
+      <a href="#"><img class="icon" src="Assets/to do list.png" alt="To-Do List" /> To-Do List</a>
+    </div>
+
+    <div class="bottom-links">
+      <a href="#"><img class="icon" src="Assets/pfp.png" alt="Profile" /> Profile</a>
+      <a href="#"><img class="icon" src="Assets/settings.png" alt="Settings" /> Settings</a>
+    </div>
+  </div>
+  <div class="content">
+    <div class="search-wrapper">
+        <input type="text" placeholder="Search" class="search-bar">
+    </div>
+        <div class="container">
+            <div class="box" id="present">
+                <img src="Assets/present.png" class="box-img">
+                <div class="info">
+                    <div class="count">1</div>
+                    <div class="label">Present</div>
+                </div>
+            </div>
+
+            <div class="box" id="absent">
+                <img src="Assets/absent.png" class="box-img">
+                <div class="info">
+                    <div class="count">2</div>
+                    <div class="label">Absent</div>
+                </div>
+            </div>
+
+            <div class="box" id="late">
+                <img src="Assets/late.png" class="box-img">
+                <div class="info">
+                    <div class="count">1</div>
+                    <div class="label">Late</div>
+                </div>
+            </div>
+    </div>
+
+        <div class="sec">
+            <div>
+                <select id="sem" name="sem">
+                    <option value="sem1mid">First Semestral Midterms</option>
+                    <option value="sem1fin">First Semestral Finals</option>
+                    <option value="sem2mid">Second Semestral Midterms</option>
+                    <option value="sem2fin">Second Semestral Finals</option>
+                </select>
+            </div>
+            
+        </div>
+        </div>
+        <table>
+            <tr>
+                <th>Date</th>
+                <th>Time In</th>
+                <th>Time Out</th>
+                <th>Status</th>
+            </tr>
+            <tbody class="tbodyy">
+        <tr>
+            <td>MAY 02, 2025</td>
+            <td>9:00 AM</td>
+            <td>11:50 AM</td>
+            <td><span class="status present">Present</span></td>
+        </tr>
+        <tr>
+            <td>MAY 03, 2025</td>
+            <td>-----</td>
+            <td>-----</td>
+            <td><span class="status absent">Absent</span>
+            </td>
+        </tr>
+        <tr>
+            <td>MAY 06, 2025</td>
+            <td>-----</td>
+            <td>-----</td>
+            <td><span class="status absent">Absent</span>
+            </td>
+        </tr>
+
+        <tr>
+            <td>MAY 10, 2025</td>
+            <td>9:10 AM</td>
+            <td>11:00 AM</td>
+            <td><span class="status late">Late</span></td>
+        </tr>
+        
+      </tbody>
+        </table>
+        <script>
+    const menuToggle = document.getElementById('menu-toggle');
+    const sidebar = document.getElementById('sidebar');
+
+    menuToggle.addEventListener('click', () => {
+      sidebar.classList.toggle('active');
+    });
+  </script>
+</body>
+</html>

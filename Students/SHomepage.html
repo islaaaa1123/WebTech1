@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Courses</title>
+  <link rel="stylesheet" href="SHomepage.css">
+</head>
+<body>
+<div>
+  <header class="header">
+     <img src="Assets/Menu Bar.png" alt="Logo" class="menu" id="menu-toggle">
+     <img src="Assets/mcclogo.png" alt="Logo" class="logo">
+    <h1>MABALACAT CITY COLLEGE</h1>
+    
+  </header>
+  <div class="sidebar" id="sidebar">
+    <div class="top-links">
+      <a href="#"><img class="icon" src="Assets/home.png" alt="Home" /> Home</a>
+      <a href="#"><img class="icon" src="Assets/Calendar.png" alt="Calendar" /> Calendar</a>
+      <a href="#"><img class="icon" src="Assets/to do list.png" alt="To-Do List" /> To-Do List</a>
+    </div>
+
+    <div class="bottom-links">
+      <a href="#"><img class="icon" src="Assets/pfp.png" alt="Profile" /> Profile</a>
+      <a href="#"><img class="icon" src="Assets/settings.png" alt="Settings" /> Settings</a>
+    </div>
+  </div>
+  <div class="content">
+    <input type="text" placeholder="Search" class="search-bar">
+
+    <div class="course-card green">
+      <a href="Webtech.html" class="course-card green">
+      <img src="Assets/Webtech.jpg" alt="WebTech">
+      <span>WebTech</span>
+      </a>
+    </div>
+
+    <div class="course-card-blue">
+      <a href="OOP.html" class="course-card blue">
+      <img src="Assets/OOP.jpg" alt="OOP">
+      <span>OOP</span>
+      </a>
+    </div>
+
+    <div class="course-card-purple">
+      <a href="Comorg.html" class="course-card purple">
+      <img src="Assets/comorg.png" alt="Comorg">
+      <span>ComOrg</span>
+      </a>
+    </div>
+
+    <div class="course-card-brown">
+      <a href="MCC.html" class="course-card brown">
+      <img src="Assets/MCC LOGO.png" alt="MCC 102">
+      <span>MCC 102</span>
+      </a>
+    </div>
+
+    <div class="course-card-black">
+      <a href="PE.html" class="course-card black">
+      <img src="Assets/PE.png" alt="PE">
+      <span>PE</span>
+      </a>
+    </div>
+
+    <div class="course-card violet">
+      <img src="Assets/MMS.jpg" alt="MMS">
+      <span>MMS</span>
+    </div>
+  </div>
+  <script>
+    const menuToggle = document.getElementById('menu-toggle');
+    const sidebar = document.getElementById('sidebar');
+
+    menuToggle.addEventListener('click', () => {
+      sidebar.classList.toggle('active');
+    });
+  </script>
+
+  
+</script>
+</body>
+</html>
