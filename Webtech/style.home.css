@@ -1,0 +1,267 @@
+.header {
+  display: flex;
+  justify-content: flex;
+  align-items: center;
+  background: #b82a2a;
+  padding-left: 10px;
+  gap: 20px;
+  top: 0;
+  left: 0;
+  height: 60px;
+  width: 100%;
+  position: fixed;
+  z-index: 1000;
+}
+
+h1 {
+  font-size: 25px;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: lighter;
+  letter-spacing: 2px;
+  color: white;
+}
+
+img {
+  width: 50px;
+  height: auto;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #e4e4e4;
+}
+  
+.sidebar {
+  padding: 0;
+  left: 0;
+  width: 70px;
+  height: 100%;
+  background-color: #3a3a3a;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: fixed;
+  z-index: 500;
+}
+
+.sidebar-mobile {
+  padding: 0;
+  left: 0;
+  width: 70px;
+  height: 100%;
+  background-color: #3a3a3a;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: fixed;
+  transform: translateX(-100%);
+  transition: transform 0.3s ease;
+  z-index: 500;
+}
+  
+.top a, .bottom a {
+  display: block;
+  color: white;
+  padding: 15px;
+  font-family: arial;
+  font-weight: lighter;
+  font-size: 10px;
+  text-align: center;
+  text-decoration: none;
+  line-height: 20px;
+}
+
+.top a:hover, .bottom a:hover {
+  background-color: #8b2020;
+}
+   
+.top a.active, .bottom a.active {
+  background-color: #b82a2a;
+  font-weight: bold;
+}
+
+.top {
+  margin-top: 97px;
+ }
+
+.bottom {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.icons {
+  width: 60%;
+  height: auto;
+}
+
+.pfp {
+  width: 70%;
+  height: auto;
+}
+
+.profile-wrapper {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-dropdown {
+  display: none;
+  position: absolute;
+  left: 100%;
+  top: 50%;
+  transform: translateY(-80%);
+  background-color: #5f5f5f;
+  color: white;
+  border-radius: 6px;
+  min-width: 150px;
+  text-align: left;
+  z-index: 1000;
+  padding: 5px 0;
+}
+
+.profile-dropdown a {
+  display: block;
+  padding: 8px 12px;
+  font-size: 13px;
+  color: white;
+  text-decoration: none;
+  font-family: Arial, sans-serif;
+}
+
+.profile-dropdown a:hover {
+  background-color: #464646;
+}
+
+.profile-wrapper:hover .profile-dropdown {
+  display: block;
+}
+
+.setting {
+  width: 50%;
+  height: auto;
+}
+
+h5 {
+  font-family: arial;
+  font-weight: bold;
+  color: black;
+  background-color: white;
+  margin-left: 70px;
+  padding-left: 50px;
+  padding-top: 12px;
+  padding-bottom: 10px;
+  margin-top: 60px;
+  width: 100%;
+  position: fixed;
+  z-index: 500;
+}
+
+.container {
+  display: flex;
+  grid-template-columns: 300px 300px 300px;
+  gap: 20px;
+  padding: 20px;
+  padding-top: 140px;
+  margin-left: 100px;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+.box {
+  border-radius: 5px;
+  display: flex;
+  padding: 20px;
+  width: 300px;
+  height: 100px;
+  align-items: center;
+  position: relative;
+  color: white;
+  font-family: arial;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.box a {
+  color: white;
+  text-decoration: none;
+  letter-spacing: 2px;
+  margin-left: 10px;
+}
+
+#class1 {
+  background: #419437;
+}
+
+#class2 {
+  background: #4c9fcb;
+}
+
+#class3 {
+  background: #932b76;
+}
+
+#class4 {
+  background: #bd622b;
+}
+
+#class5 {
+  background: #000000;
+}
+
+#class6 {
+  background: #2b3890;
+}
+
+.sub-icon {
+  width: 100px;
+  height: 100px;
+  border-radius: 5px;
+}
+
+details.menu {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+summary {
+  list-style: none;
+  cursor: pointer;
+  font-size: 20px;
+  color: white;
+}
+
+summary::-webkit-details-marker {
+  display: none;
+}
+
+.menu-options {
+  position: absolute;
+  top: 30px;
+  right: 0;
+  background: white;
+  color: black;
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  min-width: 100px;
+  z-index: 10;
+}
+
+.menu-options button {
+  display: block;
+  width: 100%;
+  padding: 8px 12px;
+  background: none;
+  border: none;
+  text-align: left;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.menu-options button:hover {
+  background-color: #f0f0f0;
+}

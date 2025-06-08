@@ -1,0 +1,289 @@
+.header {
+  display: flex;
+  justify-content: flex;
+  align-items: center;
+  background: #b82a2a;
+  padding-left: 10px;
+  gap: 20px;
+  top: 0;
+  left: 0;
+  height: 60px;
+  width: 100%;
+  position: fixed;
+  z-index: 1000;
+}
+
+h1 {
+  font-size: 25px;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: lighter;
+  letter-spacing: 2px;
+  color: white;
+}
+
+img {
+  width: 50px;
+  height: auto;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #e4e4e4;
+}
+  
+.sidebar {
+  padding: 0;
+  left: 0;
+  width: 70px;
+  height: 100%;
+  background-color: #3a3a3a;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: fixed;
+  z-index: 500;
+}
+  
+.top a, .bottom a {
+  display: block;
+  color: white;
+  padding: 15px;
+  font-family: arial;
+  font-weight: lighter;
+  font-size: 10px;
+  text-align: center;
+  text-decoration: none;
+  line-height: 20px;
+}
+
+.top a:hover, .bottom a:hover {
+  background-color: #8b2020;
+}
+   
+.top a.active, .bottom a.active {
+  background-color: #b82a2a;
+  font-weight: bold;
+}
+
+.top {
+  margin-top: 97px;
+ }
+
+.bottom {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.icons {
+  width: 60%;
+  height: auto;
+}
+
+.pfp {
+  width: 70%;
+  height: auto;
+}
+
+.profile-wrapper {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-dropdown {
+  display: none;
+  position: absolute;
+  left: 100%;
+  top: 50%;
+  transform: translateY(-80%);
+  background-color: #5f5f5f;
+  color: white;
+  border-radius: 6px;
+  min-width: 150px;
+  text-align: left;
+  z-index: 1000;
+  padding: 5px 0;
+}
+
+.profile-dropdown a {
+  display: block;
+  padding: 8px 12px;
+  font-size: 13px;
+  color: white;
+  text-decoration: none;
+  font-family: Arial, sans-serif;
+}
+
+.profile-dropdown a:hover {
+  background-color: #464646;
+}
+
+.profile-wrapper:hover .profile-dropdown {
+  display: block;
+}
+
+.setting {
+  width: 50%;
+  height: auto;
+}
+
+h5 {
+  display: flex;
+  align-items: center;
+  font-family: arial;
+  font-weight: bold;
+  color: black;
+  background-color: white;
+  margin-left: 70px;
+  padding-left: 50px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-top: 60px;
+  width: 100%;
+  position: fixed;
+  z-index: 500;
+}
+
+.spacer {
+  flex: 1;
+}
+
+.date {
+  font-family: arial;
+  font-weight: bold;
+  margin-left: 10px;
+}
+
+input[type="month"] {
+  background: none;
+  border: none;
+  outline: none;
+  box-shadow: none;
+  padding: 0;
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+}
+
+select {
+  font-family: arial;
+  font-size: 15px;
+  font-weight: bold;
+  text-indent: 15px;
+  width: 100px;
+  border-radius: 5px;
+  background: none;
+  border: none;
+  outline: none;
+  box-shadow: none;
+  padding: 0;
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  margin-right: 150px;
+}
+
+.table-wrapper {
+  max-height: 85%;
+  overflow-y: auto;
+  overflow-x: auto;
+  background: white;
+  position: absolute;
+  margin-top: 130px;
+  margin-left: 100px;
+  margin-right: 50px;
+  margin-bottom: 30px;
+  border-radius: 10px;
+}
+
+.table-wrapper::-webkit-scrollbar {
+  width: 12px;
+  height: 12px;
+}
+
+.table-wrapper::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+.table-wrapper::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 10px;
+  border: 3px solid #f1f1f1;
+}
+
+.table-wrapper::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+  font-family: Arial, sans-serif;
+}
+
+th, td {
+  border: 1px solid black;
+  padding: 10px;
+  text-align: center;
+  min-width: 100px;
+  height: 40px;
+}
+
+tr:first-child th {
+  border-top: none;
+  border-left: none;
+  border-bottom: none;
+  background: #f0f0f0;
+}
+
+th {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  width: 100%;
+  overflow-x: auto;
+}
+
+td {
+  font-size: 11px;
+}
+
+thead th div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 16px;
+}
+
+tbody td:first-child {
+  position: sticky;
+  left: 0;
+  background: #f0f0f0;
+  z-index: 0;
+  font-weight: bold;
+  border: none;
+}
+
+th span.day-number {
+  display: block;
+  font-size: 1.6em;
+  font-weight: bold;
+  color: #222;
+}
+
+th span.day-name {
+  display: block;
+  font-size: 0.75em;
+  font-weight: normal;
+}
+
+.time {
+  width: 100px;
+}

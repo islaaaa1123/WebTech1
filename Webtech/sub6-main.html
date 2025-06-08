@@ -1,0 +1,187 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="style.sub-main.css">
+    </head>
+    <body>
+        <div class="header">
+            <img src="mcclogo.png">
+            <h1>MABALACAT CITY COLLEGE</h1>
+        </div>
+
+        <div class="sidebar">
+            <div class="top">
+                <a href="homepage.html"  class="active">
+                    <img src="home.png" class="icons">
+                    Home
+                </a>
+                <a href="calendar.html">
+                    <img src="calendar.png" class="icons">
+                    Calendar
+                </a>
+                <a href="to-do-list.html">
+                    <img src="to-do-list.png" class="icons">
+                    To-do
+                </a>
+            </div>
+
+            <div class="bottom">
+                <div class="profile-wrapper">
+                    <a href="profile.html">
+                        <img src="pfp.png" class="pfp">
+                    </a>
+                    <div class="profile-dropdown">
+                        <a href="loginpage.html">Add another account</a>
+                        <a href="loginpage.html">Sign Out</a>
+                    </div>
+                </div>
+                <a href="settings.html">
+                    <img src="settings.png"  class="setting">
+                </a>
+            </div>
+        </div>
+
+        <div>
+            <h5>
+                <a href="homepage.html">Home</a> ❯ <b>CC12OOP BSIT-1C</b>
+            </h5>
+        </div>
+
+        <div class="container">
+            <div class="box" id="all">
+                <img src="attendance.jpeg" class="box-img">
+                <div class="info1">
+                    <div class="count">6</div>
+                    <div class="label">Attendance</div>
+                </div>
+            </div>
+
+            <div class="box" id="mid">
+                <img src="absent.jpeg" class="box-img">
+                <div class="info2">
+                    <div class="count">3</div>
+                    <div class="label">Midterms</div>
+                </div>
+            </div>
+
+            <div class="box" id="fin">
+                <img src="late.jpeg" class="box-img">
+                <div class="info3">
+                    <div class="count">3</div>
+                    <div class="label">Finals</div>
+                </div>
+            </div>
+
+            <a href="#popup" class="open-btn">Create</a>
+
+            <div id="popup" class="popup-overlay">
+            <div class="popup-box">
+                <a href="#" class="close-btn">&times;</a>
+                <img src="qr.png" class="qr-img"><br>
+
+                <h4>93947-93459</h4>
+
+                <br>
+
+                <input text="subject" id="subject" placeholder="Enter Attendace Title"><br>
+
+                <br>
+                
+                <label for="time">In:</label>
+                <input type="time" id="in" value="07:00"><br>
+
+                <br>
+                
+                <label for="time">Out:</label>
+                <input type="time" id="out" value="10:00"><br>
+
+                <br>
+
+                <label for="date">Date:</label>
+                <input type="date" id="date"><br>
+
+
+                <br>
+
+                <button type="submit" class="button">Save</button>
+            </div>
+            </div>
+        </div>
+
+        <div class="sec">
+            <div>
+                <select id="sem" name="sem">
+                    <option value="all">All Attendance</option>
+                    <option value="sem2mid">Second Semestral Midterms</option>
+                    <option value="sem2fin">Second Semestral Finals</option>
+                </select>
+            </div>
+
+            <div>
+                <input type="date">
+            </div>
+
+            <div>
+                <input type="search" placeholder="Search">
+            </div>
+        </div>
+
+        <table>
+            <tr>
+                <th>Attendace Title</th>
+                <th>Date</th>
+                <th>Time-In</th>
+                <th>Time-Out</th>
+                <th>Present</th>
+                <th></th>
+            </tr>
+            <tr>
+                <td><a href="sub6.html">Laboratory - Week 5</a></td>
+                <td>March 13, 2025</td>
+                <td>12:00 PM</td>
+                <td>3:00 PM</td>
+                <td>5</td>
+                <td><img src="qr.png"></td>
+            </tr>
+            <tr>
+                <td>Lecture - Week 6</td>
+                <td>March 18, 2025</td>
+                <td>2:00 PM</td>
+                <td>4:00 PM</td>
+                <td>4</td>
+                <td><img src="qr.png"></td>
+            </tr>
+            <tr>
+                <td>Laboratory - Week 7</td>
+                <td>March 27, 2025</td>
+                <td>12:00 PM</td>
+                <td>3:00 PM</td>
+                <td>3</td>
+                <td><img src="qr.png"></td>
+            </tr>
+            <tr>
+                <td>Laboratory - Week 11</td>
+                <td>April 24, 2025</td>
+                <td>12:00 PM</td>
+                <td>3:00 PM</td>
+                <td>4</td>
+                <td><img src="qr.png"></td>
+            </tr>
+            <tr>
+                <td>Lecture - Week 12</td>
+                <td>April 29, 2025</td>
+                <td>2:00 PM</td>
+                <td>4:00 PM</td>
+                <td>5</td>
+                <td><img src="qr.png"></td>
+            </tr>
+            <tr>
+                <td>Laboratory - Week 12</td>
+                <td>May 08 2025</td>
+                <td>12:00 PM</td>
+                <td>3:00 PM</td>
+                <td>3</td>
+                <td><img src="qr.png"></td>
+            </tr>
+        </table>
+    </body>
+</html>
